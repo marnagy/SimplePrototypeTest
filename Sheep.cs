@@ -11,7 +11,11 @@ public class Sheep : Animal {
 
         System.Console.WriteLine("Sheep is being made through copy...");
 
+        // deep copy
         Sheep clonedSheep = new Sheep(this);
+
+        // shallow copy
+        // Sheep clonedSheep = this;
 
         return (Animal)clonedSheep;
 
